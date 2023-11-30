@@ -6,9 +6,9 @@
 
 在以下环境运行通过, 可供参考:
 
-windows
-nodejs 14.18.1
-opencv 4.8.0
+ - windows
+ - nodejs 14.18.1
+ - opencv 4.8.0
 
 # 安装
 
@@ -22,7 +22,11 @@ opencv 4.8.0
 # 使用
 
 1. 编辑 app.conf 配置
+
    1.1 调整谱子的升降调号 `tune` (必须)
+
    1.2 调整缩放系数 `sheetScale` (必须)
+
    1.3 调整其他参数 (可选)
+
 2. 将待识别的图片放到 input 目录下, 执行 `node ./` 即可, 识别后的结果将输出至 output 目录
