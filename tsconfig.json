@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017", "dom"],
+    "module": "commonjs",
+    "target": "es2017",
+    "baseUrl": "./",
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "jsx": "preserve",
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "outDir": "dist"
+  },
+  "include": ["./src"]
+}
