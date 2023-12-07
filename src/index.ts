@@ -37,7 +37,7 @@ const staffConfig: { riseOrReduce: "rise" | "reduce"; markCount: number } = {
       const originalImagePath = path.resolve(__dirname, "../input", fileName);
       const originalImage = cv.imread(originalImagePath);
       const scaleFactor = getScaleFactor(originalImage); // 入参图片和模版的缩放系数
-      console.log(`detect scaleFactor: ${scaleFactor}`);
+      // console.log(`detect scaleFactor: ${scaleFactor}`);
       const { lines, firstLineIdx, gridHeight } = detectLine(originalImage);
 
       const noteModels = await detectNoteModel(originalImagePath, scaleFactor);
@@ -149,4 +149,7 @@ const staffConfig: { riseOrReduce: "rise" | "reduce"; markCount: number } = {
   }
 
   console.log("done");
+  setTimeout(() => {
+    process.exit(0);
+  }, 300);
 })();
